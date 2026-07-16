@@ -1,0 +1,500 @@
+<title>女性情绪消费与陪伴赛道洞察 · Pilot Ventures</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{
+  --bg:#f6f8fa; --card:#ffffff; --ink:#0b0f14; --sec:#57606a; --mut:#8b949e;
+  --line:#e3e7ec; --accent:#c25b8a; --aqua:#1baf7a; --warm:#eb6834; --red:#e34948;
+  --figbg:#fcfcfb; --figln:#e6e6df; --chip:#eef2f7;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d1117; --card:#161b22; --ink:#e6edf3; --sec:#9aa4af; --mut:#6e7681;
+  --line:#232a33; --accent:#e08bb0; --chip:#1c2230;
+}}
+:root[data-theme="dark"]{
+  --bg:#0d1117; --card:#161b22; --ink:#e6edf3; --sec:#9aa4af; --mut:#6e7681;
+  --line:#232a33; --accent:#e08bb0; --chip:#1c2230;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:clamp(20px,5vw,64px) clamp(16px,4vw,40px)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);font-weight:600;margin:0 0 10px}
+h1{font-size:clamp(28px,5vw,46px);line-height:1.15;margin:0 0 16px;font-weight:800;
+  letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(20px,3vw,27px);margin:56px 0 6px;font-weight:750;letter-spacing:-.01em;
+  padding-top:22px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:32px 0 10px;font-weight:700;color:var(--ink)}
+h4{font-size:15px;margin:22px 0 6px;font-weight:700;color:var(--ink)}
+p{margin:12px 0;color:var(--sec);max-width:72ch}
+p.ink{color:var(--ink)}
+.lede{font-size:18px;color:var(--ink);max-width:64ch;line-height:1.6}
+.meta{font-family:var(--mono);font-size:12.5px;color:var(--mut);display:flex;flex-wrap:wrap;
+  gap:6px 18px;margin:18px 0 0;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.meta b{color:var(--sec);font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:26px 0}
+.tiles.n5{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 16px;min-width:0}
+.tile .k{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.tile .v{font-size:clamp(22px,2.4vw,28px);font-weight:800;margin:6px 0 2px;font-variant-numeric:tabular-nums;letter-spacing:-.02em;word-break:break-word;line-height:1.15}
+.tile .s{font-size:12.5px;color:var(--sec)}
+.tile .v.a{color:var(--accent)} .tile .v.g{color:var(--aqua)} .tile .v.w{color:var(--warm)} .tile .v.r{color:var(--red)}
+.tblwrap{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:9px 13px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--mut);font-weight:600;background:var(--chip)}
+tr:last-child td{border-bottom:none}
+td.num{font-variant-numeric:tabular-nums;font-family:var(--mono);text-align:right}
+td.mut{color:var(--mut);font-size:13px}
+td.wrap{white-space:normal;min-width:180px}
+.call{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:0 12px 12px 0;padding:16px 20px;margin:22px 0}
+.call.warm{border-left-color:var(--warm)} .call.red{border-left-color:var(--red)} .call.g{border-left-color:var(--aqua)}
+.call p{margin:6px 0;color:var(--ink)} .call b{color:var(--ink)}
+ol.find{counter-reset:f;list-style:none;padding:0;margin:20px 0;display:grid;gap:12px}
+ol.find li{counter-increment:f;background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:16px 18px 16px 54px;position:relative;color:var(--sec)}
+ol.find li::before{content:counter(f);position:absolute;left:16px;top:15px;width:26px;height:26px;
+  display:grid;place-items:center;background:var(--accent);color:#fff;border-radius:8px;
+  font-family:var(--mono);font-weight:700;font-size:13px}
+ol.find b{color:var(--ink)}
+ul.plain{padding-left:20px;color:var(--sec)} ul.plain li{margin:6px 0}
+ul.plain b, ol.plain b{color:var(--ink)}
+.op{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin:22px 0}
+.op .tag{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:#fff;background:var(--accent);padding:3px 8px;border-radius:5px;font-weight:600;display:inline-block}
+.op h3{margin:10px 0 6px;font-size:19px}
+.op h4{margin:16px 0 4px;font-size:13px;color:var(--mut);text-transform:uppercase;font-family:var(--mono);letter-spacing:.06em}
+.op p, .op ul{color:var(--sec)}
+.foot{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mut)}
+.foot code{font-family:var(--mono);background:var(--chip);padding:1px 5px;border-radius:4px;color:var(--sec)}
+.foot p{max-width:none}
+mark{background:linear-gradient(transparent 60%,color-mix(in srgb,var(--accent) 32%,transparent) 0);
+  color:inherit;padding:0 1px}
+a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+a:hover{border-bottom-style:solid}
+.src{font-size:12.5px;color:var(--mut);font-style:italic;margin-top:8px;max-width:none}
+hr{border:none;border-top:1px solid var(--line);margin:44px 0}
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Pilot Ventures · 市场研究</p>
+  <h1>女性情绪消费与陪伴赛道洞察 <span style="color:var(--mut);font-weight:400">· 2026 中盘</span></h1>
+  <p class="lede">面向 LP 与合作方的中立市场趋势报告。聚焦 <b style="color:var(--ink)">AI 陪伴 + 乙女游戏</b> 两条主线，兼谈相邻的悦己/谷子/短剧作为大盘参照。四个具体机会方向收敛在文末。</p>
+  <div class="meta">
+    <span><b>数据快照</b> 2026-07-15</span>
+    <span><b>分析人</b> Pilot Ventures Research</span>
+    <span><b>置信</b> 🟢多源 / 🟡单源 / 🔴二手</span>
+  </div>
+
+  <h2>摘要</h2>
+  <ol class="find">
+    <li><b>女性主导消费的宏观顺风真实存在。</b> 中国女性主导消费约 10 万亿（占社零 21%），其中<mark>强情感段（谷子/短剧女频/乙游/AI 陪伴/心理疗愈）2024 合计约 2,869 亿</mark>，增速普遍 +15%~35%，AI 陪伴更是 +50%~150%——盘子不大，但增速在所有细分里最快。</li>
+    <li><b>AI 陪伴已被产品验证真实需求，但纯聊天型商业化天花板已现。</b> Character.AI 峰值 4,500 万 MAU、日均使用 2 小时，付费率仅 <mark>1.4%</mark>、月 ARPU $0.2；国内 Talkie / 星野的付费率也是 1.4%（MiniMax 招股书披露）。头部下滑与 Google 反向收编 Character.AI 是同一件事的两面。</li>
+    <li><b>乙女游戏进入头部集中的存量博弈期。</b> 叠纸占市场超六成份额；恋与深空 2024+2025 累计 $15.4 亿、单月峰值 <mark>$82.5M</mark>（2025.12 登顶全球手游榜）——单头部可撑 $1B ARR 天花板；但头部下载 -60%、收入 +31% 是典型存量深挖。同期 6.0 事件显示女性向社群的组织化程度让头部"敢动就敢被开团"。</li>
+    <li><b>下一波机会有四个具体方向</b>：内容与 AI 的缝合品、非陪聊型 AI 女性向应用、女性向"轻外衣重内核"、乙女向 Steam 出海。</li>
+  </ol>
+
+  <h2>一、需求端 · 女性情感消费的宏观趋势</h2>
+
+  <h3>1.1 孤独经济是所有情感消费品类的共同底盘</h3>
+  <div class="tiles n5">
+    <div class="tile"><div class="k">独居人口 2024</div><div class="v a">1.23 亿</div><div class="s">2030E 1.5-2 亿</div></div>
+    <div class="tile"><div class="k">单身人口</div><div class="v">2.4 亿</div><div class="s">占成年人口 ~1/4</div></div>
+    <div class="tile"><div class="k">单身经济 2025E</div><div class="v g">7.92 万亿</div><div class="s">CAGR ~20%</div></div>
+    <div class="tile"><div class="k">因排解孤独付费</div><div class="v w">57.7%</div><div class="s">月均 ¥140-700</div></div>
+  </div>
+  <p>中国初婚年龄持续推迟至一线城市 28-30 岁，总和生育率降至 ~1.0，独居 / 单身成为年轻群体主流生活状态。<b>情感陪伴是孤独经济中付费意愿最强、频次最高的细分。</b></p>
+  <p class="src">来源：国家统计局人口普查数据；博思数据《中国单身经济市场分析与投资前景研究报告》(2024)；星辰日报 (2026.1)</p>
+
+  <h3>1.2 女性主导消费大盘 · 强情感段是增速最快的一档</h3>
+  <p>2023 年中国女性主导消费约 <b>10 万亿</b>（4 亿 20-60 岁女性，埃森哲口径），占社零 47 万亿的 ~21%，全口径加权增速 +9.7%（跑赢社零 +3.7% 约 6 个点）。拿掉旅行 / 鞋服 / 黄金珠宝等非纯情感属性的 mega 类后，剩下的品类几乎全是中高增速的中小钱包——<mark>"女性主导 + 情感/悦己消费 = 高增速"</mark> 这个判断才真正成立。</p>
+
+  <h4>第一档 · 强情感属性（2024 规模，已按女主导度折算）</h4>
+  <div class="tblwrap"><table>
+    <thead><tr><th>品类</th><th>2024 规模</th><th>24→25 增速</th><th>口径 / 来源</th></tr></thead>
+    <tbody>
+      <tr><td>谷子（二次元周边）</td><td class="num">~1,689 亿</td><td class="num">+18%~+42%</td><td>艾媒 / QuestMobile；61.39% 女性买家</td></tr>
+      <tr><td>心理咨询 / 疗愈</td><td class="num">~780 亿</td><td class="num">+15%</td><td>心理健康服务大盘 × 75% 女性来访</td></tr>
+      <tr><td>短剧女频</td><td class="num">~308 亿</td><td class="num">+35%</td><td>DataEye 女频热力占比折算</td></tr>
+      <tr><td>乙游（窄口径）</td><td class="num">~80 亿</td><td class="num">+30%</td><td>澎湃 / 七麦（恋爱养成向）</td></tr>
+      <tr><td>AI 陪伴</td><td class="num">~12 亿</td><td class="num">+50%~+150%</td><td>口径分歧极大（艾媒 / 月狐 / QuestMobile）</td></tr>
+      <tr><td>网文女频</td><td class="mut">缺一手拆分</td><td class="mut">—</td><td>阅文 2024 全口径 81.2 亿</td></tr>
+      <tr><td>线下恋陪 / 男陪</td><td class="mut">缺总盘</td><td class="mut">—</td><td>陪伴经济 2025E 400-500 亿</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>5 个有数品类 2024 合计 ≈ 2,869 亿。</b></p>
+
+  <h4>第二档 · 悦己属性</h4>
+  <div class="tblwrap"><table>
+    <thead><tr><th>品类</th><th>2024 规模</th><th>24→25 增速</th><th>口径</th></tr></thead>
+    <tbody>
+      <tr><td>化妆品</td><td class="num">~3,486 亿</td><td class="num">+5%</td><td>× 80% 女性</td></tr>
+      <tr><td>医美</td><td class="num">~2,783 亿</td><td class="num">+16%</td><td>× 90% 女性</td></tr>
+      <tr><td>旅拍 / 写真</td><td class="num">~320 亿</td><td class="num">+24%</td><td>× 80% 女性</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>合计 2024 ≈ 6,589 亿。</b></p>
+
+  <div class="call">
+    <p><b>核心判断</b></p>
+    <p>规模与增速反向——情感段单品类最大才 2,000 亿级（谷子），但增速普遍 +15% 起步；悦己段规模是情感段的 2.3 倍，但增速多在 5%~24% 区间。</p>
+    <p><b>"小钱包高增速"是这个赛道的特征，不是 bug。</b> 押细分品类头部的胜率结构与消费大品牌完全不同：不需要抢万亿市场，抢千亿细分里的头部足以撑起 VC 级回报。情感段中 <b>AI 陪伴 & 短剧女频是两个"新兴 + 高增速"品类</b>，谷子和乙游则是"存量高集中度 + 中速增长"。</p>
+  </div>
+  <p class="src">来源：华泰《掘金"她经济"》(2024.5)；QuestMobile《2024 女性人群洞察》；艾媒《2025-2029 情绪经济消费趋势》；艾媒《2024-2025 谷子经济》；埃森哲；Euromonitor；灼识咨询；华泰研究 (2025)</p>
+
+  <h3>1.3 情绪经济与心理健康的整体钱包</h3>
+  <div class="tiles">
+    <div class="tile"><div class="k">情绪经济 2024</div><div class="v a">2.31万亿</div><div class="s">2025E 2.72 万亿，2029E 4.5 万亿</div></div>
+    <div class="tile"><div class="k">心理健康服务 2024</div><div class="v">2,024.8亿</div><div class="s">YoY +23%（2025E 2,241.2 亿）</div></div>
+    <div class="tile"><div class="k">高知女性心理 App 认知率</div><div class="v w">79.4%</div><div class="s">但专业服务渗透不足</div></div>
+  </div>
+  <p>需求正大量流向自助 App 与内容社区——这是 <b>AI 心理治疗类产品</b>（如 Slingshot Ash）的宏观土壤。</p>
+  <p class="src">来源：艾媒咨询《2024-2025 情绪经济消费趋势报告》；观知海内 (2025)；智研咨询 (2025)</p>
+
+  <h2>二、分析框架 · 情感消费的付费分层</h2>
+  <p>我们把服务女性情感需求的产品，按 <b>"付费能力 × 陪伴深度"</b> 分成三层。这个框架的价值不是画一张漂亮的图，而是解释<mark>为什么中间那一层是最值得投的</mark>。</p>
+
+  <div class="tblwrap"><table>
+    <thead><tr><th>层</th><th>付费</th><th>产品形态</th><th>底层轴</th><th>可规模化</th><th>可投性</th></tr></thead>
+    <tbody>
+      <tr><td><b>大 R</b></td><td>月均万元级</td><td class="wrap">线下恋陪：定制 1v1 情感陪伴 + 物理接触 + 有成长的共同经历</td><td>真人稀缺（1→1）</td><td>❌ 人力不可复制</td><td class="mut">低（合规灰色）</td></tr>
+      <tr><td><b>中 R</b></td><td>月均大几百~上千</td><td class="wrap"><b>乙游 + AI 陪伴</b>：花 token/电量获得千人千面个性化"虚拟男友情感陪伴"</td><td>AI 个性化（1→千人千面 @ 软件成本）</td><td>✅</td><td style="color:var(--accent)"><b>⭐ 甜点区</b></td></tr>
+      <tr><td><b>中小 R</b></td><td>白嫖~小额</td><td class="wrap">现有传统乙游：白嫖 + 解锁细化角色内容；被动欣赏 + 想象代入</td><td>作者内容（1→many）</td><td>✅ 但已红海</td><td class="mut">中（存量厂主场）</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="call g">
+    <p><b>一句话总结</b></p>
+    <p>作者内容做不到千人千面，真人陪伴做不到规模化，<mark>只有 AI 同时拿下"个性化 + 边际成本趋零"</mark>——所以钱在中间这层。</p>
+  </div>
+
+  <h3>两个必须叠加的 nuance</h3>
+
+  <div class="call warm">
+    <p><b>Nuance 1 · AI 陪伴的命门是留存不是获客</b></p>
+    <p>新鲜感退潮、情感依赖反噬（舆论 / 监管）、AI"恰到好处的笨"难调——Character.AI / 星野 / 猫箱 / Talkie 已经系统性地验证了 <b>"上手爆、留存难"</b>。纯 AI 陪伴没有护城河，用户可以在几天内建立情感依赖，也可以在一次角色人设漂移后彻底流失。</p>
+  </div>
+
+  <div class="call warm">
+    <p><b>Nuance 2 · 单边（只有 AI 或只有内容）都会被夹击</b></p>
+    <p>只有 AI 没有作者级内容：留存差、缺少可持续情感锚点。只有作者内容没有 AI：无法千人千面、无法处理"随时聊天"的陪伴需求。</p>
+  </div>
+
+  <div class="call">
+    <p><b>收敛后的 thesis</b></p>
+    <p><mark>护城河 = 作者级 IP/内容质量 × AI 千人千面个性化 的结合。</mark> 胜负手是——内容厂（叠纸/库洛级）向下补 AI 能力赢，还是 AI 原生陪伴厂向上补到"作者级内容质量"赢？</p>
+  </div>
+
+  <h2>三、AI 陪伴子赛道</h2>
+
+  <h3>3.1 全球盘 · 真实需求已验证</h3>
+  <p>AI 陪伴不是假设性需求，而是被大量产品验证的真实市场：</p>
+  <div class="tblwrap"><table>
+    <thead><tr><th>产品</th><th>MAU</th><th>核心指标</th><th>年收入 (USD)</th><th>月 ARPU</th><th>定位</th></tr></thead>
+    <tbody>
+      <tr><td><b>Character.AI</b></td><td class="num">2,000万+（峰值 4,500万）</td><td>日均使用 2 小时，月访问 1.8 亿+</td><td class="num">$3,220万→$5,000万</td><td class="num">~$0.2</td><td>AI 角色扮演</td></tr>
+      <tr><td><b>LoveyDovey</b>（TainAI 15 人）</td><td class="num">35 万</td><td>Z 世代女性 80%，阶梯情感进程</td><td class="num"><b>$1,700 万</b></td><td class="num" style="color:var(--accent)"><b>~$4.0</b></td><td>AI 恋爱陪伴</td></tr>
+      <tr><td>Replika</td><td class="num">~200 万</td><td>长期情感伴侣</td><td class="num">~$5,000-7,000 万</td><td class="num">~$2.5-3.0</td><td>AI 情感伴侣</td></tr>
+      <tr><td>Chai AI</td><td class="num">100 万+ DAU</td><td>1,000 万+ 下载</td><td class="num">~$1,000-3,000 万</td><td class="num mut">—</td><td>AI 聊天平台</td></tr>
+      <tr><td>猫箱（字节）</td><td class="num">688 万峰值→下滑</td><td>累计下载 2.46 亿</td><td class="num mut">未公开</td><td class="num mut">—</td><td>AI 角色互动</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="call">
+    <p><b>关键洞察</b></p>
+    <p><mark>LoveyDovey 以 35 万 MAU 做到 $1,700 万年收入（月 ARPU $4）</mark>，是 Character.AI 月 ARPU $0.2 的 <b>20 倍</b>。这证明<b>高情感粘性的 AI 恋爱产品具备极高的单用户变现效率</b>——关键在于产品是否真正触达情感深层需求。Character.AI 用户日均 2 小时的使用时长则证明 AI 陪伴的 engagement 天花板极高。</p>
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><div class="k">全球累计下载</div><div class="v a">2.2 亿</div><div class="s">截至 2025.7；H1 2025 <b>+88% YoY</b></div></div>
+    <div class="tile"><div class="k">H1 2025 收入</div><div class="v">$8,200 万</div><div class="s">全年预计 $1.2 亿；消费者支出 $221M</div></div>
+    <div class="tile"><div class="k">每下载收入</div><div class="v w">$0.52 → $1.18</div><div class="s">2024 → 2025，付费意愿快速提升</div></div>
+    <div class="tile"><div class="k">中国 AI 情感陪伴市场</div><div class="v a">$5.3 → 82 亿</div><div class="s">2025 → 2028E · CAGR ~149%</div></div>
+  </div>
+
+  <h3>3.2 头部融资信号（2024-2025）</h3>
+  <div class="tblwrap"><table>
+    <thead><tr><th>项目</th><th>融资</th><th>领投</th><th>时间</th></tr></thead>
+    <tbody>
+      <tr><td><b>Character.AI</b></td><td>Google $2.5-2.7B 反向收编（团队 + 模型 license）</td><td>Google</td><td>2024.8</td></tr>
+      <tr><td><b>Slingshot AI</b>（Ash / AI 心理治疗）</td><td>Series A <b>$93M</b></td><td>a16z / Radical / Forerunner</td><td>2025.7</td></tr>
+      <tr><td>Born（Pengu / 情感 AI 硬件）</td><td>Series A $15M</td><td>—</td><td>2025</td></tr>
+      <tr><td>Friend（可穿戴 AI 陪伴）</td><td>$2.5M</td><td>—</td><td>2024-2025</td></tr>
+      <tr><td>Chai AI</td><td>ARR $30M（估算，2025）</td><td class="mut">—</td><td class="mut">—</td></tr>
+      <tr><td>Candy AI</td><td>ARR $25-120M（估算区间）</td><td class="mut">—</td><td>2024-2025</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>注意力信号</b>：头部 10% 的 App 拿走全行业 89% 收入——AI 陪伴的头部集中度极高。</p>
+  <p class="src">来源：DemandSage (2026)；Business of Apps (2026)；TechCrunch (2025.8, 2024.8)；SimilarWeb；Market Clarity (2025)；Behavioral Health Business (2025.7)</p>
+
+  <h3>3.3 中国盘 · 天花板已现 & 监管拐点已过</h3>
+  <div class="tblwrap"><table>
+    <thead><tr><th>产品</th><th>峰值 MAU (时间)</th><th>2025 变化</th><th>出品方</th></tr></thead>
+    <tbody>
+      <tr><td><b>星野</b></td><td class="num">488 万 (2024.11)</td><td>日下载从 2 万+ → 7 千（-65%）</td><td>MiniMax</td></tr>
+      <tr><td><b>猫箱</b></td><td class="num">472 万 (2024.11) / 累计 2.46 亿</td><td>日下载从 2 万+ → 7 千（-65%）</td><td>字节跳动</td></tr>
+      <tr><td>X EVA</td><td class="num">181 万 (2024.11)</td><td>缓慢下滑</td><td>阅文</td></tr>
+      <tr><td>筑梦岛</td><td class="num">60 万 (2024.11)</td><td>2025.6 被上海网信办约谈</td><td>阅文</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="call red">
+    <p><b>MiniMax 招股书首次披露的关键数字（2025.12 递表港交所）</b></p>
+    <p>Talkie + 星野 2025Q3 平均 MAU <b>2,005 万</b>；前 9 月收入 <b>$1,875 万</b>（占 MiniMax 营收 35.1%）；付费率 <mark>1.4%</mark>（与 Character.AI 一致）。</p>
+    <p><b>这个 1.4% 是这一子赛道最关键的数字</b>——它意味着 C 端聊天型 AI 陪伴的商业化天花板已经被压得很低：即便你做到 2,000 万 MAU，年收入也就 $25M 量级，撑不起独立 IPO 的估值叙事。Google 之所以选择反向收编而非投资 Character.AI，本质是相同判断。</p>
+  </div>
+
+  <h4>监管拐点</h4>
+  <ul class="plain">
+    <li>2025.6 <b>筑梦岛被上海网信办约谈</b>（低俗擦边 + 涉未成年人）</li>
+    <li>2025.12 情感陪伴 AI 新规收紧训练数据</li>
+    <li><b>2026.7《AI 拟人化交互服务管理暂行办法》生效</b>，明确禁止向未成年人提供虚拟恋人，要求建立未成年人模式和家长控制</li>
+  </ul>
+  <p>监管拐点对赛道 <b>双向影响</b>：合规成本上升 → 淘汰擦边小团队；同时 <mark>合规女性向反而拿到定价权</mark>——不再需要与"擦边变现"的产品在同一价位竞争。</p>
+
+  <h3>3.4 女性用户结构 · 需求密度真实</h3>
+  <div class="tiles">
+    <div class="tile"><div class="k">中国女性占 AI 陪伴用户</div><div class="v a">40%</div><div class="s">远高于美国 18-22%</div></div>
+    <div class="tile"><div class="k">小红书"梦女"浏览</div><div class="v">15亿</div><div class="s">AI 陪伴笔记 56 万+</div></div>
+    <div class="tile"><div class="k">全球 AI 恋爱 chatbot MAU</div><div class="v">~2,900万</div><div class="s">月访问 8,800 万</div></div>
+    <div class="tile"><div class="k">Talkie 覆盖国家</div><div class="v">200+</div><div class="s">全球陪伴类 App Top 3</div></div>
+  </div>
+  <p>核心用户画像：<b>25-40 岁、受过良好教育、经济独立的都市女性</b>，面对高婚育压力和有限的社交空间，AI 伴侣提供"准社交恋爱"出口。央视新闻 2025.3 专题《她们与 AI 恋爱》→ AI 恋爱从亚文化进入主流公众视野。</p>
+  <p class="src">来源：小红书平台数据；36 氪；Asia Tech Lens (2025)；ChinaTalk (2025)；央视新闻 (2025.3)；SCMP (2025)；MiniMax 港股招股书 (2025.12)</p>
+
+  <h2>四、乙女游戏子赛道</h2>
+
+  <h3>4.1 头部高度集中 · 单头部可撑 $1B 流水量级</h3>
+  <h4>Sensor Tower 中国乙女向手游收入排名（2024+2025 累计）</h4>
+  <div class="tblwrap"><table>
+    <thead><tr><th>#</th><th>产品</th><th>画风</th><th>2024 收入</th><th>2025 收入</th><th>累计 (USD)</th><th>出品方</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>恋与深空</b></td><td>3D</td><td class="num">$6.65 亿</td><td class="num">$8.73 亿</td><td class="num" style="color:var(--accent)"><b>$15.4 亿</b></td><td>叠纸</td></tr>
+      <tr><td>2</td><td>世界之外</td><td>2D</td><td class="num">$1.38 亿</td><td class="num">$0.69 亿</td><td class="num">$2.07 亿</td><td>网易</td></tr>
+      <tr><td>3</td><td>光与夜之恋</td><td>2D</td><td class="num">$1.10 亿</td><td class="num">$0.92 亿</td><td class="num">$2.02 亿</td><td>腾讯</td></tr>
+      <tr><td>4</td><td>如鸢</td><td>2D</td><td class="num">$0.83 亿</td><td class="num">$0.44 亿</td><td class="num">$1.27 亿</td><td>灵犀互娱</td></tr>
+      <tr><td>5</td><td>恋与制作人</td><td>2D</td><td class="num">$0.34 亿</td><td class="num">$0.29 亿</td><td class="num">$0.63 亿</td><td>叠纸（运营 8 年）</td></tr>
+      <tr><td>6</td><td>未定事件簿</td><td>2D</td><td class="mut">—</td><td class="mut">—</td><td class="num">$0.61 亿</td><td>米哈游</td></tr>
+      <tr><td>7</td><td>时空中的绘旅人</td><td>2D</td><td class="mut">—</td><td class="mut">—</td><td class="num">$0.52 亿</td><td>友谊时光</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="call">
+    <p><b>关键观察</b></p>
+    <p>1. <b>恋与深空一骑绝尘</b>——两年累计 $15.4 亿，2025 反超 2024（+31%），单品占据 Sensor Tower 追踪的乙女品类 >75% 收入。</p>
+    <p>2. <b>头部聚集效应</b>——Top 1 与 Top 2 收入差达 <b>7.4 倍</b>；Top 5 之外产品都在千万美元级别。</p>
+    <p>3. <b>叠纸（恋与深空 + 无限暖暖）占市场超六成份额</b>——腾讯 / 网易 / 米哈游的传统乙游集体下滑 vs 叠纸独跑。</p>
+    <p>4. <b>恋与深空 2025.12 单月流水 $82.5M 登顶全球手游榜</b>（超王者荣耀 + 2 倍原神）——证明单个头部乙女产品可撑起 <mark>$1B ARR 天花板</mark>，赛道已从"小众"跨过主流化门槛。</p>
+  </div>
+
+  <p><b>Infinity Nikki（无限暖暖，叠纸 2024.11 上线）</b>：首月净利 $16M，首周下载 2,000 万；用户以女性休闲玩家为主，注重换装 / 无暴力 / 探索——<b>证明非恋爱内核的女性向大 DAU 品类可复用手游变现漏斗</b>，是下一个可能的爆点。</p>
+
+  <h3>4.2 全球与中国乙游市场大盘</h3>
+  <div class="tblwrap"><table>
+    <thead><tr><th>指标</th><th>数值</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td>全球乙女游戏 2025</td><td class="num"><b>$5.69B</b></td><td>otome.com</td></tr>
+      <tr><td>全球乙女游戏 2030E</td><td class="num">$8.88B（CAGR 9.3%）</td><td>otome.com</td></tr>
+      <tr><td><b>中国女性向游戏 2024</b></td><td class="num" style="color:var(--accent)"><b>$11 亿（80 亿元），YoY +124.1%</b></td><td>伽马数据（游戏产业增速最快）</td></tr>
+      <tr><td>中国乙女游戏 2026E</td><td class="num">122 亿元，CAGR 18%+</td><td>233 乐园</td></tr>
+      <tr><td>全球女性玩家占比</td><td class="num">45-46%</td><td>otome.com</td></tr>
+      <tr><td>乙女游戏核心用户</td><td>女性 18-34</td><td>otome.com</td></tr>
+      <tr><td>乙女游戏男性用户</td><td class="num">6% → 12%</td><td>otome.com（翻倍）</td></tr>
+    </tbody>
+  </table></div>
+  <p>中国女性向游戏 2024 的 +124.1% 是整个游戏产业增速最快的细分——这个信号足以让任何"中国游戏是不是过时了"的判断被重估。</p>
+
+  <h3>4.3 存量博弈 · 首发红利衰减 & 头部动一下就被反噬</h3>
+
+  <h4>信号 1 · 头部收入涨、下载跌 = 典型存量深挖</h4>
+  <p>恋与深空 2024→2025 收入 <b>+31%</b>，但下载 <b>-60%</b>（4,138 万 → 1,653 万）。这是"存量用户 ARPU 越拉越高，新用户获取越来越贵"的经典存量博弈形态。</p>
+
+  <h4>信号 2 · 首发红利期缩短</h4>
+  <p>《夜幕之下》（不眠夜工作室，2026-06-05 公测）TapTap 现评分 <b>6.5</b>——首发即巅峰、随后跳水。新品越来越难靠首发买量 + 美术 + CV 堆出的高分撑过内容更新与社群检验。</p>
+
+  <h4>信号 3 · 内卷代价陡升</h4>
+  <p>2026-06 恋与深空 6.0 空降新男主"敖尹"→ <b>大规模抵制退氪</b>，叠加"A-0731"编号影射 731、PV 娱乐化女性安全争议；官方 6/30 道歉、砍掉新男主开发线。<mark>头部为博存量做的激进内容动作 → 被高度组织化的女性社群反噬</mark>（退氪、挂人、避雷帖已成建制）。</p>
+
+  <div class="call warm">
+    <p><b>对赛道的三条结构性判断</b></p>
+    <p>1. 增量红利关闭：<b>"再造一款传统乙游"已不是增长故事，是存量抢夺战</b>。</p>
+    <p>2. 首发分不代表长线质量：<b>尽调看长期留存与更新后评分曲线</b>，别被首发榜位骗。</p>
+    <p>3. <b>女性向社群冲突不是噪音，是结构性运营风险变量</b>——头部翻车已成常态，中小厂容错更低。</p>
+  </div>
+
+  <h3>4.4 Steam / 全球化出海信号</h3>
+  <div class="tiles">
+    <div class="tile"><div class="k">Steam Female Protagonist</div><div class="v a">21 款</div><div class="s">H1 2026 · 838 万份 · $2.93 亿</div></div>
+    <div class="tile"><div class="k">中国团队占比</div><div class="v g">37.5%</div><div class="s">6/16，全体中国团队分布</div></div>
+    <div class="tile"><div class="k">Road to Empress II</div><div class="v">57.5万</div><div class="s">份 · FMV+AI · $591 万</div></div>
+    <div class="tile"><div class="k">Cozy/Relaxing 份额</div><div class="v w">0.7%→2.6%</div><div class="s">H1 2023→2026 单调上升</div></div>
+  </div>
+  <p><b>代表产品</b>：Road to Empress II（新一工作室，FMV + AI）；Realm of Ink（Leap Studio，水墨武侠 Roguelite）；Starsand Island（Seed Sparkle Lab 珠海，治愈生活模拟，16.4 万份）。</p>
+  <p><b>Cozy / Relaxing 品类相邻信号</b>：Steam 份额从 0.7%（H1 2023）→ 2.6%（H1 2026），单调上升；45 款平均评分 88%，高于全体 84.5%——<b>画风疗愈、非暴力的品类正在被更宽的女性受众接受</b>。</p>
+
+  <h3>4.5 反常识分支 · 女性向"轻外衣重内核"正在跑通</h3>
+  <p>打破"女性 = 轻度单机"的成见：女性向"财富密码"正在从<b>沉浸情感乙游</b>转向 <mark>轻度经营 / 合成包装 + 重度数值养成 / 社交竞争内核</mark>。</p>
+
+  <div class="tblwrap"><table>
+    <thead><tr><th>案例</th><th>类型</th><th>信号</th><th>核心机制</th></tr></thead>
+    <tbody>
+      <tr><td><b>《我的花园世界》</b></td><td>古风种花放置经营</td><td class="wrap">微信/抖音小游戏畅销榜首；<b>2026-06-15 App 版 iOS 游戏畅销第 4</b>（挤在王者、和平精英、三角洲之间）</td><td>公会三重捆绑（资源帮扶 + 特权 + 周联赛升降级）</td></tr>
+      <tr><td><b>《时尚百货城》</b></td><td>商战经营</td><td class="wrap">微信小游戏畅销前 30 / 抖音前 10</td><td>员工/艺人养成 + 异步 PVP + 数值卡牌 + 帅哥美女卡语音剧情 = 轻度心动</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="call g">
+    <p><b>可复制的三条打法</b></p>
+    <p>1. <b>轻度外衣重度内核</b>：种花/换装/经营外壳吸引女性用户 → 内里是社交 + 数值养成</p>
+    <p>2. <b>买量素材向短剧靠拢</b>：爱人背叛/离职逆袭/复仇文学等短剧题材</p>
+    <p>3. <b>社交/账号沉淀锁长线</b>：公会 + 排行 + 强绑定</p>
+  </div>
+  <p class="src">来源：Sensor Tower；awnchina 转 Sensor Tower December 2025；伽马数据 CNG（2025）；otome.com；观察者网 (2026.6)；17173 (2026.6)；澎湃 (2026.6)；TapTap</p>
+
+  <h2>五、值得关注的机会点</h2>
+  <p>我们把上面的市场信号收敛成 <b>4 个具体的机会方向</b>。每个方向都给出<b>逻辑 + 缺口 + 尽调锚</b>——即什么样的团队和产品指标值得深入看。</p>
+
+  <div class="op">
+    <span class="tag">🎯 机会 1 · 最高优先级</span>
+    <h3>"作者级内容 × AI 千人千面"的缝合品</h3>
+    <h4>逻辑</h4>
+    <p>付费分层框架的必然收敛点。乙游的"作者内容"和 AI 陪伴的"个性化能力"各自都有硬伤，但两者的结合处理论上一次性解决"陪伴深度不够"和"内容非千人千面"两个问题。</p>
+    <h4>胜负手</h4>
+    <ul class="plain">
+      <li><b>内容厂（叠纸 / 库洛级）向下补 AI</b>：优势是 IP、用户、内容工业化能力；劣势是 AI 团队搭建慢、组织内 AI 优先级不够</li>
+      <li><b>AI 原生陪伴厂向上补作者级内容</b>：优势是 AI 能力从 Day1 是核心；劣势是难以做到"叠纸级"的美术 + 剧情 + 音乐工业化</li>
+    </ul>
+    <h4>两个可具体挖的缺口</h4>
+    <ul class="plain">
+      <li><b>乙游 IP 授权 × AI 陪伴的合作模式</b>——IP 方与独立 AI 团队的授权/共创模式在国内还没跑通；日本 Shizuku AI（a16z Japan 领投，估值 ~$8,000 万）是海外先行样本</li>
+      <li><b>AI 原生乙游</b>——从产品设定 Day1 就为"AI 千人千面"设计，不是把 AI 嫁接到传统乙游框架上</li>
+    </ul>
+    <h4>尽调锚</h4>
+    <ul class="plain">
+      <li>内测数据：D1 留存 > 60%、D7 留存 > 40%</li>
+      <li>深度粘性：单用户日均消息 > 100 条 / 日均使用时长 > 60 min</li>
+      <li>用户结构：女性占比 > 70%</li>
+      <li>单位经济：单用户日均 token 消耗 ≤ $0.5（或有明确降至此水平的技术路径）</li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="tag">🎯 机会 2</span>
+    <h3>非陪聊型 AI 女性向应用</h3>
+    <h4>逻辑</h4>
+    <p>Character.AI 付费率 1.4% + 头部下滑 65% + Talkie/星野付费率也 1.4% = <mark>纯聊天型 AI 陪伴的商业化天花板已经现形</mark>。下一波的机会不在"再做一个 Character.AI"，而在把 AI 从"聊天引擎"用作垂类工具：</p>
+    <ul class="plain">
+      <li>AI 心理自助（Slingshot AI Ash $93M Series A 是 2025 最亮眼的先行者）</li>
+      <li>AI 换装 + 疗愈</li>
+      <li>AI 塔罗 / 占卜（对标 Co-Star $400K/月 + <b>美国 18-25 岁女性 25% 装机率</b>）</li>
+      <li>AI 助手化的美妆 / 穿搭 / 情感建议</li>
+    </ul>
+    <h4>为什么对女性用户更容易变现</h4>
+    <p>垂类应用有明确的付费场景（一次占卜、一次心理咨询、一次穿搭建议），不需要用户先建立情感依赖再付费——<b>"工具型付费"的转化路径比"陪伴型订阅"短</b>。</p>
+    <h4>尽调锚</h4>
+    <ul class="plain">
+      <li>品类的<b>天然壁垒</b>在哪里（非聊天型的粘性来源）</li>
+      <li>单产品验证：D7 留存 > 30%、周活跃 > 3 次</li>
+      <li>单次付费或订阅的付费率：> 5%（远高于聊天型 1.4%）</li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="tag">🎯 机会 3 · 反常识</span>
+    <h3>女性向"轻外衣重内核"品类</h3>
+    <h4>逻辑</h4>
+    <p>"女性 = 轻度单机"的成见被《我的花园世界》《时尚百货城》两个案例系统性打破。<b>女性向可以承载重度社交 + 数值，只要题材包装 + 社交机制重组得当</b>——外壳是种花 / 换装 / 经营让女性用户上手无压力，内里是公会 / PVP / 数值养成锁长线。</p>
+    <h4>为什么现在是窗口期</h4>
+    <ul class="plain">
+      <li><b>传统乙游存量博弈</b>（见 4.3）→ 顶端流量抽走后，中腰部品类反而有空间</li>
+      <li><b>小游戏 / 微信生态</b>的分发红利尚未完全被卷完；抖音/微信小游戏畅销榜给了低成本验证渠道</li>
+      <li><b>创始人 pool 尚未拥挤</b>——传统女性向创作者关注的是内容/IP，重度玩法 + 女性题材的复合人才稀缺</li>
+    </ul>
+    <h4>尽调锚</h4>
+    <ul class="plain">
+      <li>微信/抖音小游戏畅销榜验证跑通（DAU 100 万+ 或月流水 5,000 万+）再考虑上 App 版</li>
+      <li>团队具备<b>女性向题材理解 + 重度玩法数值设计</b>双能力</li>
+      <li>有清晰的社交/数值锁定机制（公会/联赛/排行）</li>
+    </ul>
+  </div>
+
+  <div class="op">
+    <span class="tag">🎯 机会 4</span>
+    <h3>乙女向 Steam / 全球化出海（非 3A）</h3>
+    <h4>逻辑</h4>
+    <p>Steam Female Protagonist 21 款 838 万份 $2.93 亿（H1 2026），中国团队 6/16 超配（37.5%）——<b>乙女向 Steam 出海的"能不能做"已经跑通</b>，现在是"怎么做得更好"的规模化问题：</p>
+    <ul class="plain">
+      <li><b>Road to Empress II</b>（FMV，57.5 万份 / $591 万）：FMV + AI，横店取景，工业化路径清晰</li>
+      <li><b>Realm of Ink</b>：水墨武侠 Roguelite，中式美术 × 全球 Roguelite 玩法</li>
+      <li><b>Starsand Island</b>（16.4 万份）：治愈生活模拟，完全无叙事包袱</li>
+    </ul>
+    <h4>为什么这条路值得关注</h4>
+    <ul class="plain">
+      <li>手游端头部集中 + 大厂锁死，中小团队上不去；Steam 端<b>中小团队仍有生存空间</b></li>
+      <li>Steam 平台<b>长期留存与口碑积累</b>对独立团队更友好（不像手游依赖买量）</li>
+      <li>女性主角 + 治愈 / FMV / Roguelite 玩法是<b>中国团队最有可能"用全球化玩法讲女性故事"的组合</b></li>
+    </ul>
+    <h4>尽调锚</h4>
+    <ul class="plain">
+      <li>成本 < $5M + 周期 < 2 年（符合独立游戏 EV 结构）</li>
+      <li>首个 build 有<b>明确差异化的视觉记忆点</b>（不是又一个二次元 / 又一个 pixel art）</li>
+      <li>女性主角<b>不流于工具化叙事</b>——避免"女性受害推动剧情"套路（2024-2026 玩家已高度脱敏）</li>
+      <li>团队具备海外运营 know-how（发行商合作或已有出海产品）</li>
+    </ul>
+  </div>
+
+  <h2>六、数据缺口与待验证</h2>
+  <p>写完这份报告，还有几个关键问题仍没有可靠数据源，需要在后续深入研究或访谈中补齐：</p>
+  <ol class="find">
+    <li><b>AI 陪伴头部产品的留存曲线</b>——公开数据全是 MAU 和收入，几乎没有 D30 / D60 留存拆解；这是"AI 陪伴留存难"判断的关键验证点。</li>
+    <li><b>头部乙游的 ARPU 与付费分层结构</b>——恋与深空 $15.4 亿是怎么分层付费出来的？大 R 占比 vs 中小 R 白嫖用户占比？这决定了"中 R 甜点区"到底有多厚。</li>
+    <li><b>恋与深空 6.0 事件的实际流水 / DAU 影响</b>——社群抵制是雷声大雨点小，还是真转化为收入下滑？这是"女性向社群风险如何定价"的第一个实盘验证。</li>
+    <li><b>女性向"轻外衣重内核"品类的规模化上限</b>——目前只有《我的花园世界》《时尚百货城》两个案例；这个打法能否复制？会不会到某个规模后被大厂降维？</li>
+    <li><b>"内容 × AI"缝合产品的首个成功商业化样本</b>——现在整个赛道都在等第一个跑通的案例；谁先跑通，谁定义品类。</li>
+  </ol>
+
+  <h2>附录 · 主要数据源索引</h2>
+  <h4>中文报告 / 咨询机构</h4>
+  <ul class="plain">
+    <li>艾媒咨询《2024-2025 谷子经济产业发展研究报告》 / 《2024-2025 情绪经济消费趋势报告》</li>
+    <li>华泰研究《掘金"她经济"》(2024.5)</li>
+    <li>QuestMobile《2024 女性人群洞察》</li>
+    <li>南财智库《女性消费力洞察》(2023.4)</li>
+    <li>CBNData《2024 女性品质生活趋势》</li>
+    <li>伽马数据 CNG《2025 中国游戏产业趋势报告》</li>
+    <li>博思数据《中国单身经济市场分析与投资前景研究报告》(2024)</li>
+    <li>国家统计局人口普查数据</li>
+    <li>观知海内《中国心理健康服务行业发展报告》(2025)</li>
+  </ul>
+  <h4>海外机构</h4>
+  <ul class="plain">
+    <li>Sensor Tower（乙游收入 / 短剧收入）</li>
+    <li>Business of Apps（Character.AI / Calm / Headspace）</li>
+    <li>otome.com（全球乙游市场规模）</li>
+    <li>data.ai · TechCrunch · The Information</li>
+    <li>Newzoo《Global Games Market Report 2025》</li>
+    <li>DemandSage · SimilarWeb · Statista · Niko Partners</li>
+  </ul>
+  <h4>招股书 / 官方财报</h4>
+  <ul class="plain">
+    <li>MiniMax 港股招股书 (2025.12) · 泡泡玛特 2025 年报 (2026.3) · 卡游招股书 (2025.6) · 阅文 2024 年报</li>
+  </ul>
+  <h4>关键单点引用</h4>
+  <ul class="plain">
+    <li><a href="https://awnchina.cn/sensor-tower-releases-december-2025-global-mobile-game-data/">awnchina 转 Sensor Tower December 2025</a></li>
+    <li><a href="https://www.businessofapps.com/data/character-ai-statistics/">Business of Apps · Character.AI Statistics</a></li>
+    <li><a href="https://techcrunch.com/2025/08/12/ai-companion-apps-on-track-to-pull-in-120m-in-2025/">TechCrunch · AI Companion Apps 2025</a></li>
+    <li><a href="https://sensortower.com/blog/state-of-short-drama-apps-2025">Sensor Tower · State of Short Drama 2025</a></li>
+    <li><a href="https://otome.com/2025/02/25/otome-games-market-trends-and-growth/">otome.com · Otome Games Market Trends and Growth</a></li>
+  </ul>
+
+  <div class="foot">
+    <p><b>置信度说明</b>：报告中所有关键数据点均标注了来源；财务 / 招股书 / 官方公告为 🟢 高置信；咨询机构估算 &amp; Sensor Tower 反推为 🟡 中置信；二手报道 / 单一来源为 🔴 低置信（正文中已尽量避免使用）。</p>
+    <p>Pilot Ventures · Research · 2026-07-15</p>
+  </div>
+</div>
